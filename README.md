@@ -26,7 +26,7 @@ This project demonstrates a contact form implementation using modern web develop
 
 ## Technologies Used
 
-- **Next.js 13+** (App Router)
+- **Next.js 16+** (App Router)
 - **Server Actions** for backend operations
 - **TypeScript** for type safety
 - **React** for UI components
@@ -61,7 +61,7 @@ contactform/
 
 | Technology            | Purpose                              |
 | --------------------- | ------------------------------------ |
-| 🔄 **Next.js 13+**    | Full-stack framework with App Router |
+| 🔄 **Next.js 16+**    | Full-stack framework with App Router |
 | ⚙️ **Server Actions** | Backend form handling & validation   |
 | 📘 **TypeScript**     | Type-safe development                |
 | ⚛️ **React**          | Interactive UI components            |
