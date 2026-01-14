@@ -5,12 +5,26 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
+import { createContact } from "@/action";
 
 const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState("");
 
-  const onSubmit = () => {};
+  const onSubmit = async (formData) => {
+    setIsSubmitting(true);
+    const result = await createContact(formData);
+    console.log(result);
+
+    if (result.success) {
+      setMessage("Message sent successfully!");
+      const form = document.getElementById("contact-form");
+      form.reset();
+    } else {
+      setMessage(result.error || "something went wrong");
+    }
+    setIsSubmitting(false);
+  };
 
   return (
     <Card className="mx-auto w-full max-w-2xl">
