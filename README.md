@@ -63,7 +63,6 @@ contactform/
 | --------------------- | ------------------------------------ |
 | 🔄 **Next.js 16+**    | Full-stack framework with App Router |
 | ⚙️ **Server Actions** | Backend form handling & validation   |
-| 📘 **TypeScript**     | Type-safe development                |
 | ⚛️ **React**          | Interactive UI components            |
 
 ## Quick Start
